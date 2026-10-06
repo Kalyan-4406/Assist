@@ -1,0 +1,81 @@
+export type BuildCard = {
+  title: string;
+  one_liner: string;
+  stack: string[];
+  first_step: string;
+  why_it_helps: string;
+};
+export type College = {
+  id: string;
+  slug: string;
+  name: string;
+  city: string;
+  state: string;
+  is_demo: number;
+  total: number;
+  today: number;
+  rising: number;
+  rank: number;
+  views: number;
+  branches: Record<string, number>;
+  recent: string[];
+};
+export type Snapshot = {
+  colleges: College[];
+  total: number;
+  demoTotal: number;
+  liveTotal: number;
+  hideDemo: boolean;
+  hasDemo: boolean;
+  referrals: number;
+  ready: number;
+  funnel: { views: number; started: number; cards: number; submitted: number };
+  daily: number[];
+  angles: { angle: string; count: number }[];
+  ambassadors: { code: string; college: string; referrals: number }[];
+  health: { calls: number; fallbacks: number; avgLatency: number };
+  config: {
+    dateLabel: string;
+    dateISO: string;
+    groupUrl: string;
+    siteUrl: string;
+    campaignStart: string;
+    day: number;
+    campusGoal: number;
+  };
+};
+export type Registration = {
+  id: string;
+  name: string;
+  email: string;
+  college_id: string;
+  branch: string;
+  year: string;
+  idea_text: string;
+  build_card: string;
+  own_code: string;
+  ref_code: string | null;
+  angle: string | null;
+  is_ambassador: number;
+  is_demo: number;
+  readiness: string;
+  created_at: string;
+};
+export type PublicRegistration = {
+  demoIncluded: boolean;
+  code: string;
+  firstName: string;
+  college: College;
+  card: BuildCard;
+  branch: string;
+  year: string;
+  position: number;
+  referrals: number;
+  readiness: { laptop: boolean; account: boolean; repo: boolean };
+  owned: boolean;
+};
+export type Brief = {
+  insights: string[];
+  actions: { owner: string; action: string; why: string; message: string }[];
+  source: "template" | "ai";
+};

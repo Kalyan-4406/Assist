@@ -1,0 +1,42 @@
+# Dependencies and generated build/tool output
+/node_modules/
+/.next/
+/.vinext/
+/dist/
+/out/
+/outputs/
+/coverage/
+/.wrangler/
+/.sites-runtime/
+/.agents/
+/.codex/
+/.vercel/
+/test-results/
+/playwright-report/
+/work/
+/artifacts/
+*.tsbuildinfo
+next-env.d.ts
+
+# Private configuration and credentials
+.env*
+!.env.example
+.dev.vars*
+!.dev.vars.example
+ACCESS_DETAILS.txt
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Generated recordings, archives and machine files
+*.mp4
+*.webm
+*.mov
+*.wav
+*.zip
+*.tar.gz
+*.log
+.DS_Store
+Thumbs.db
+Desktop.ini

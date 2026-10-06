@@ -1,0 +1,10 @@
+PUBLIC_SITE_URL=http://127.0.0.1:5173
+WORKSHOP_DATE_LABEL=Date to be announced
+CAMPAIGN_START=2026-10-04
+# Set your own secrets before running; no insecure defaults are supplied.
+OPS_PASSWORD=
+SESSION_SECRET=
+# Optional organiser-verified settings:
+# WORKSHOP_DATE_ISO=
+# WORKSHOP_GROUP_URL=
+# GEMINI_API_KEY=
